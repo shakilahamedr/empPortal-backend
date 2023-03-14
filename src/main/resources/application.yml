@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    #url: jdbc:mysql://awsrds-2116020.c918bifp8fik.us-west-2.rds.amazonaws.com:3306/emp
+    #password: test1234
+    url: jdbc:mysql://localhost:3306/employeeportaldb
+    password: test123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: create
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+      
+server:
+   port: 9595
+
